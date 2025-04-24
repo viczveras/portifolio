@@ -7,21 +7,21 @@ export default function Projects() {
     {
       title: "BeeLinks",
       description: "Projeto final da disciplina Linguagens de Marcação, com foco em HTML e CSS e TailwindCSS",
-      image: "/projeto1.png",
+      image: "/projeto1.svg",
       tech: ["HTML", "TailWindCSS"],
       link: "https://tkroger15.github.io/beelink3v/"
     },
     {
       title: "BluePost",
       description: "BluePost é uma plataforma de compartilhamento de imagens desenvolvida com Flask, permitindo que usuários criem contas, façam login e compartilhem suas fotos em um ambiente moderno e intuitivo.",
-      image: "/projeto2.png",
+      image: "/projeto1.svg",
       tech: ["Python", "Flask", "Html", "TailWindCSS", "JavaScript", "SQLite"],
       link: "https://github.com/viczveras/project_site/"
     },
     {
       title: "Projeto 3",
       description: "------------",
-      image: "/placeholder-project.jpg",
+      image: "/projeto1.svg",
       tech: ["Awaiting", "Awaiting", "Awaiting"],
       link: "#"
     }
