@@ -20,9 +20,9 @@ export default function Projects() {
     },
     {
       title: "Projeto 3",
-      description: "Descrição do projeto 3 - Um breve resumo do que foi desenvolvido e as tecnologias utilizadas.",
+      description: "------------",
       image: "/placeholder-project.jpg",
-      tech: ["Vue.js", "Firebase", "SASS"],
+      tech: ["Awaiting", "Awaiting", "Awaiting"],
       link: "#"
     }
   ]
