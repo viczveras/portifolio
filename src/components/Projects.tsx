@@ -39,7 +39,7 @@ export default function Projects() {
           Meus Projetos
         </h2>
         <p className="text-gray-300">
-          Confira alguns dos projetos que desenvolvi
+          Confira alguns dos projetos que desenvolvi.
         </p>
       </motion.div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

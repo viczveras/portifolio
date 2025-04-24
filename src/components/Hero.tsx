@@ -1,8 +1,11 @@
 'use client'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import { useState } from 'react'
+import ImageModal from './ImageModal'
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects')
     if (projectsSection) {
@@ -19,7 +22,10 @@ export default function Hero() {
         className="text-center"
       >
         <div className="mb-16 flex justify-center">
-          <div className="relative w-48 h-48 hover:scale-105 transition-transform duration-300">
+          <div 
+            className="relative w-48 h-48 hover:scale-105 transition-transform duration-300 cursor-pointer"
+            onClick={() => setIsModalOpen(true)}
+          >
             <Image
               src="/avatar.jpg"
               alt="Sua foto"
@@ -56,6 +62,12 @@ export default function Hero() {
           </div>
         </div>
       </motion.div>
+
+      <ImageModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        imageSrc="/avatar.jpg"
+      />
     </section>
   )
 }
