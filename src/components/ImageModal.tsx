@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faTimes } from '@fortawesome/free-solid-svg-icons'
+import Image from 'next/image'
 
 interface ImageModalProps {
   isOpen: boolean
@@ -46,11 +47,15 @@ export default function ImageModal({ isOpen, onClose, imageSrc }: ImageModalProp
             </button>
             
             <div className="relative">
-              <img
-                src={imageSrc}
-                alt="Foto de perfil"
-                className="rounded-lg max-h-[70vh] w-auto"
-              />
+              <div className="relative w-full h-full">
+                <Image
+                  src={imageSrc}
+                  alt="Imagem ampliada"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
               
               <div className="mt-4 flex items-center justify-center gap-4">
                 <button
